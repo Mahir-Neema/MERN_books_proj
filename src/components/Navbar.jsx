@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, Outlet } from 'react-router-dom';
+import TextExample from './ViewBook'
 
 function ColorSchemesExample() {
   return (
@@ -18,6 +19,7 @@ function ColorSchemesExample() {
           </Nav>
         </Container>
       </Navbar>
+      <TextExample/> 
       <Outlet/>
     </>
   );
