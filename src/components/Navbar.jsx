@@ -14,7 +14,7 @@ function ColorSchemesExample() {
           <Nav className="me-auto">
             <NavLink href='/viewbook'>View Book</NavLink>
             <Nav.Link href="#features">Add Book</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#pricing">Delete Book</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

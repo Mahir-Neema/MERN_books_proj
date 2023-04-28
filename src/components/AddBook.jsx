@@ -7,11 +7,11 @@ function AddBook() {
         <Form>
             <fieldset>
                 <Form.Group className="mb-3">
-                    <Form.Label>Dissabled input</Form.Label>
-                    <Form.Control  placeholder="Disabled input" />
+                    <Form.Label>Add Book</Form.Label>
+                    <Form.Control  placeholder="Book Title" />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                    <Form.Label htmlFor="disabledSelect">Disabled select menu</Form.Label>
+                    <Form.Label htmlFor="disabledSelect">Add author</Form.Label>
                     <Form.Select id="Select">
                         <option>Disabled select</option>
                     </Form.Select>
