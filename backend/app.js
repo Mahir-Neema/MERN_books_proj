@@ -20,6 +20,5 @@ mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(e => console.error(e));
 
 app.use(bookRoutes);
-app.set('view engine', 'ejs');
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
