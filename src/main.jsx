@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children:[
       {
-        path:"/viewbook",
+        path:"/addbook",
         element: <AddBook/>
       }
     ]
