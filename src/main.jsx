@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import ErrorPage from './components/ErrorPage.jsx'
 import AddBook from './components/AddBook.jsx';
 import ColorSchemesExample from './components/Navbar.jsx';
+import ViewBook from './components/ViewBook.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,14 @@ const router = createBrowserRouter([
       {
         path:"/addbook",
         element: <AddBook/>
+      },
+      {
+        path:"/viewbook",
+        element: <ViewBook/>
+      },
+      {
+        path:"/home",
+        element: <App/>
       }
     ]
   },

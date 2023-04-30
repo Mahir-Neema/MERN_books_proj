@@ -11,11 +11,11 @@ function ColorSchemesExample() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand to="/">Home</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/home">Home</Navbar.Brand>
           <Nav className="me-auto">
-            <NavLink href='/viewbook'>View Book</NavLink>
-            <Nav.Link href="/addbook">Add Book</Nav.Link>
-            <Nav.Link href="#pricing">Delete Book</Nav.Link>
+            <NavLink as={Link} to="/viewbook">View Book</NavLink>
+            <NavLink as={Link} to="/addbook">Add Book</NavLink>
+            {/* <Nav.Link href="#pricing">Delete Book</Nav.Link> */}
           </Nav>
         </Container>
       </Navbar>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
+import Alert from 'react-bootstrap/Alert';
 
 function AddBook() {
     const [book,setbook] = useState('');
@@ -31,6 +32,12 @@ function AddBook() {
     }
   return (
     <div style={{width:"50%", marginLeft:"auto", marginRight:"auto",marginTop:"30px"}}>
+        {alert&&<Alert key='success' variant='success'>
+          Book Added
+        </Alert>}
+        {erroralert&&<Alert key='danger' variant='danger'>
+          Error Occured while adding Book
+        </Alert>}
         <Form onSubmit={AddBook}>
             <fieldset>
                 <Form.Group className="mb-3">
