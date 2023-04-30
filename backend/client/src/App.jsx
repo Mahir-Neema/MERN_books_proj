@@ -21,7 +21,7 @@ function App() {
       <div style={{display:"flex",justifyContent:"center"}}>
       <Link to='/viewbook'> 
         <Button variant="primary" size="lg" active>
-              Primary button
+              View Books
         </Button>
       </Link>
       </div>
