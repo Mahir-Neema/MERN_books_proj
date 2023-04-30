@@ -11,7 +11,7 @@ function ColorSchemesExample() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand as={Link} to="/home">Home</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
           <Nav className="me-auto">
             <NavLink as={Link} to="/viewbook">View Book</NavLink>
             <NavLink as={Link} to="/addbook">Add Book</NavLink>

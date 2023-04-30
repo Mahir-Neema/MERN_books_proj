@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import axios from 'axios';
 import Alert from 'react-bootstrap/Alert';
+const API_URL = 'http://localhost:3000';
 
 function AddBook() {
     const [book,setbook] = useState('');
@@ -19,7 +20,7 @@ function AddBook() {
         console.log(bookdata);
         setbook('');
         setauthor('');
-        axios.post('http://localhost:3000/books', bookdata).then(
+        axios.post(`${API_URL}/books`, bookdata).then(
             (res) => {console.log(res.data),setalert(true);}
         ).catch(
             ()=> seterroralert(true)

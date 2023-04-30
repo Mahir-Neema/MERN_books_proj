@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import './ViewBook.css';
 import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
-// const API_URL = process.env.API_URL;
+const API_URL = 'http://localhost:3000';
 
 
 
@@ -29,7 +29,7 @@ function ViewBook() {
   ]
 
   useEffect(() => {
-      axios.get(`http://localhost:3000/books/search?q=${queryname}`).then((response)=>{
+      axios.get(`${API_URL}/books/search?q=${queryname}`).then((response)=>{
         if(response.data.length > 0){
             setBooks(response.data);
         } 
@@ -41,7 +41,7 @@ function ViewBook() {
 
   const deleteBook = (id) =>{
     console.log(id+" deleted");
-    axios.delete(`http://localhost:3000/books/${id}`)
+    axios.delete(`${API_URL}/books/${id}`)
     .then((res) => {
       console.log(res.data);
       setalert(true);

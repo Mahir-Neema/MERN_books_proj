@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <ViewBook/>
       },
       {
-        path:"/home",
+        path:"/",
         element: <App/>
       }
     ]
